@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Container } from "@/components/container";
 import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,9 +23,7 @@ export default function RootLayout({
 				<div>
 					<Header />
 					<main className="pt-navigation-height">{children}</main>
-					<footer>
-						<Container>footer</Container>
-					</footer>
+					<Footer />
 				</div>
 			</body>
 		</html>
